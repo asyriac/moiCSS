@@ -28,6 +28,7 @@ html {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  color: var(--text-primary);
 }
 
 .container {
@@ -96,7 +97,84 @@ hr {
   transform: translate(0, -50%);
 }
 
+/* Badge */
+.badge {
+  padding: 0.2em 0.8em;
+  background: var(--primary);
+  color: var(--text-secondary);
+}
+
+.badge-secodnary {
+  border: 1px solid var(--text-primary);
+  background: none;
+  color: var(--text-primary);
+}
+
+.badge-pill {
+  border-radius: 20%/50%;
+}
+
+.badge-container {
+  display: inline-block;
+  position: relative;
+}
+
+.badge-avatar {
+  position: absolute;
+  height: 0.7em;
+  width: 0.7em;
+  border-radius: 50%;
+  bottom: 0.3em;
+  left: 2.3em;
+}
+
+.badge-avatar.online {
+  background: var(--success);
+}
+
+.badge-avatar.offline {
+  background: var(--danger);
+}
+
+.badge-avatar.away {
+  background: var(--warning);
+}
+
+.badge-notification {
+  background: var(--danger);
+  color: var(--text-secondary);
+  padding: 0.8em;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  height: 1em;
+  width: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Icons */
+.icon {
+  font-size: 3em;
+}
+
+.icon-sm {
+  font-size: 2em;
+}
+
+.icon-lg {
+  font-size: 4em;
+}
+
 /* Utilities */
+
+.mt-1 {
+  margin-top: 1em;
+}
+
 .mb-1 {
   margin-bottom: 1em;
 }

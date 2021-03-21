@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <title>moiCSS</title>
   </head>
   <body>
@@ -21,6 +22,42 @@
       <div class="alert alert-success mb-1">Hello world <button class="btn-close" type="button">X</button></div>
       <div class="alert alert-danger mb-1">Hello world <button class="btn-close" type="button">X</button></div>
       <div class="alert alert-info mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+
+      <hr />
+
+      <h1>Badge</h1>
+      <div class="flex flex-col fj-space-between fa-center">
+        <span class="badge">Primary</span>
+        <span class="badge badge-secodnary">Secondary</span>
+        <span class="badge badge-pill">Pill</span>
+        <span class="badge badge-pill badge-secodnary">Pill</span>
+      </div>
+
+      <div>
+        <div class="mt-1 badge-container">
+          <img class="avatar" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <span class="badge-avatar online"></span>
+        </div>
+        <div class="mt-1 badge-container">
+          <img class="avatar" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <span class="badge-avatar offline"></span>
+        </div>
+        <div class="mt-1 badge-container">
+          <img class="avatar" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <span class="badge-avatar away"></span>
+        </div>
+      </div>
+      <div class="mt-1">
+        <div class="badge-container">
+          <i class="fas fa-bell icon-sm"></i>
+          <span class="badge-notification">2</span>
+        </div>
+        <div class="badge-container">
+          <i class="fas fa-shopping-cart icon-sm"></i>
+          <span class="badge-notification">2</span>
+        </div>
+      </div>
+      <hr />
     </div>
     <script src="./script.js"></script>
   </body>
