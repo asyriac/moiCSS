@@ -6,11 +6,12 @@
   --secondary: #222c3c;
   --success: #1c857e;
   --danger: #c25e62;
-  --warning: #ffca2c;
+  --warning: #eec856;
+  --warning-dark: #664d03;
   --text-primary: #202a3a;
   --text-secondary: #fff;
-  --info: #aeb8cd;
-  --info-light: #d5dff5;
+  --info: #cff4fc;
+  --info-dark: #055160;
 }
 
 html {
@@ -57,4 +58,45 @@ hr {
 .avatar-lg {
   height: 4em;
   width: 4em;
+}
+
+/* Alert */
+.alert {
+  background: var(--warning);
+  color: var(--warning-dark);
+  padding: 0.5em 1em;
+  position: relative;
+}
+
+.alert-success {
+  background: var(--success);
+  color: var(--text-secondary);
+}
+
+.alert-danger {
+  background: var(--danger);
+  color: var(--text-secondary);
+}
+
+.alert-info {
+  background: var(--info);
+  color: var(--info-dark);
+}
+
+/* Buttons */
+.btn-close {
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  cursor: pointer;
+  right: 1em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+/* Utilities */
+.mb-1 {
+  margin-bottom: 1em;
 }
