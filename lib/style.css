@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-  width: 90%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -41,6 +41,17 @@ hr {
   margin-bottom: 1em;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-primary);
 }
 
 /* Avatar */
@@ -84,24 +95,12 @@ hr {
   color: var(--info-dark);
 }
 
-/* Buttons */
-.btn-close {
-  color: inherit;
-  background: none;
-  border: none;
-  outline: none;
-  position: absolute;
-  cursor: pointer;
-  right: 1em;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
 /* Badge */
 .badge {
   padding: 0.2em 0.8em;
   background: var(--primary);
   color: var(--text-secondary);
+  display: inline-block;
 }
 
 .badge-secodnary {
@@ -156,6 +155,78 @@ hr {
   right: 0;
 }
 
+/* Buttons */
+.btn-close {
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  cursor: pointer;
+  right: 1em;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.btn {
+  background: none;
+  border: none;
+  border-radius: 0.3em / 0.2em;
+  padding: 0.5em 1em;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: var(--text-secondary);
+}
+
+.btn-secondary {
+  border: 1px solid var(--text-primary);
+  background: none;
+  color: var(--text-primary);
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--text-secondary);
+  border: 1px solid var(--primary);
+}
+
+.btn-sm {
+  font-size: 0.7rem;
+}
+
+.btn-lg {
+  font-size: 1.2rem;
+}
+
+.btn-icon {
+  font-size: 1rem;
+  padding: 0.6em;
+  border-radius: 50%;
+}
+
+.btn-icon-sm {
+  font-size: 0.7rem;
+}
+
+.btn-icon-lg {
+  font-size: 1.2rem;
+}
+
+.btn-floating {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+
 /* Icons */
 .icon {
   font-size: 3em;
@@ -177,4 +248,12 @@ hr {
 
 .mb-1 {
   margin-bottom: 1em;
+}
+
+.pr-1 {
+  padding-right: 1em;
+}
+
+.pr-sm {
+  padding-right: 0.3em;
 }
