@@ -448,6 +448,17 @@ a {
   margin: 0 0.6em;
 }
 
+/* rating */
+.rating {
+  display: inline-block;
+  padding: 0.3em 0.6em;
+  background: var(--success);
+  color: var(--text-secondary);
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
 /* Toast */
 .toasts {
   position: fixed;
@@ -515,6 +526,10 @@ a {
 
 .pr-sm {
   padding-right: 0.3em;
+}
+
+.pl-sm {
+  padding-left: 0.3em;
 }
 
 /* TODO: Add flex utility */
