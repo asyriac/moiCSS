@@ -405,6 +405,28 @@ a {
   font-size: 0.7rem;
 }
 
+/* Modal */
+
+/* Toast */
+.toasts {
+  position: fixed;
+  bottom: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.toast {
+  border-radius: 5px;
+  padding: 0.7em;
+  margin: 0.5em;
+  background: var(--success);
+  color: var(--text-secondary);
+}
+
 /* Utilities */
 
 /* TODO: Add all margin and padding utility */
