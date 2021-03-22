@@ -426,6 +426,28 @@ a {
   position: relative;
 }
 
+/* Navigation */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+  padding: 0.5em;
+}
+
+.nav a {
+  color: inherit;
+}
+
+.nav-link {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link-item {
+  margin: 0 0.6em;
+}
+
 /* Toast */
 .toasts {
   position: fixed;
