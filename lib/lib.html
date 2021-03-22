@@ -14,14 +14,14 @@ maximum-scale=1.0, user-scalable=no"
   </head>
   <body>
     <div class="container mb-1">
-      <h1>Avatar</h1>
+      <h1 class="mb-md">Avatar</h1>
       <img class="avatar avatar-sm" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
       <img class="avatar" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
       <img class="avatar avatar-lg" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
 
       <hr />
 
-      <h1>Alert</h1>
+      <h1 class="mb-md">Alert</h1>
       <div class="alert mb-1">Hello world <button class="btn-close" type="button">X</button></div>
       <div class="alert alert-success mb-1">Hello world <button class="btn-close" type="button">X</button></div>
       <div class="alert alert-danger mb-1">Hello world <button class="btn-close" type="button">X</button></div>
@@ -29,8 +29,8 @@ maximum-scale=1.0, user-scalable=no"
 
       <hr />
 
-      <h1>Badge</h1>
-      <div class="flex flex-col fj-space-between fa-center">
+      <h1 class="mb-md">Badge</h1>
+      <div>
         <span class="badge">Primary</span>
         <span class="badge badge-secodnary">Secondary</span>
         <span class="badge badge-pill">Pill</span>
@@ -62,7 +62,7 @@ maximum-scale=1.0, user-scalable=no"
         </div>
       </div>
       <hr />
-      <h1>Button</h1>
+      <h1 class="mb-md">Button</h1>
       <div class="mb-1">
         <button class="btn btn-primary btn-sm">Primary</button>
         <button class="btn btn-primary">Primary</button>
@@ -85,6 +85,95 @@ maximum-scale=1.0, user-scalable=no"
       </div>
       <div class="mb-1">
         <button class="btn btn-primary btn-icon"><i class="fas fa-chevron-circle-up"></i></button>
+      </div>
+      <hr />
+      <h1 class="mb-md">Cards</h1>
+      <div class="card-list">
+        <div class="card">
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-md card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-1 card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-md card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-list">
+        <div class="card">
+          <div class="card-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, temporibus.</p>
+          </div>
+        </div>
+        <div class="card">
+          <button class="btn-close btn-close-card">X</button>
+          <div class="card-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, temporibus.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-list">
+        <div class="card">
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <span class="card-badge">New</span>
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-md card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+        <div class="card">
+          <button class="btn-close btn-close-card">X</button>
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-md card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-h">
+        <img class="card-img-h" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+        <div class="card-content">
+          <h3 class="mb-md">Item name</h3>
+          <h5 class="mb-md card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sed numquam. Amet harum necessitatibus adipisci est natus cum possimus odit?</h5>
+          <div class="flex">
+            <button class="btn btn-primary btn-sm">+</button>
+            <h3>5</h3>
+            <button class="btn btn-primary btn-sm">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-shadow">
+        <div class="card-overlay">
+          <img class="card-img" src="https://images.unsplash.com/photo-1611095790691-ff1be3430b22?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="" />
+          <div class="card-overlay-text">
+            <button class="btn btn-primary">Add to wishlist</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="mb-sm">Item name</h3>
+          <h5 class="mb-md card-body">Rs. 699</h5>
+          <button class="btn btn-primary mt-sm">Buy</button>
+        </div>
       </div>
     </div>
     <script src="./script.js"></script>
