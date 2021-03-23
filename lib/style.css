@@ -431,8 +431,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--white);
-  padding: 0.5em;
+  background: var(--grey);
+  padding: 0.5em 2em;
 }
 
 .nav a {
@@ -446,6 +446,37 @@ a {
 
 .nav-link-item {
   margin: 0 0.6em;
+}
+
+.nav-vertical {
+  margin: 0;
+  padding-left: 1.5em;
+  width: 8em;
+  background-color: var(--grey);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-link-vertical {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-link-item-vertical {
+  margin: 0.3em 0;
+  padding-left: 0.5em;
+  cursor: pointer;
+}
+
+.nav-link-item-vertical:hover {
+  background: #f1edf7;
+}
+
+.nav-vertical-workspace {
+  margin-left: 8.5em;
 }
 
 /* rating */
