@@ -2,11 +2,12 @@
 
 /* Base styles */
 :root {
-  --primary: #226a84;
-  --secondary: #222c3c;
+  --primary: #1e40af;
+  --primary-lite: #dbeafe;
+  --secondary: #2563eb;
   --success: #1c857e;
-  --danger: #c25e62;
-  --warning: #eec856;
+  --danger: #ef4444;
+  --warning: #fbbf24;
   --warning-dark: #664d03;
   --text-primary: #202a3a;
   --text-secondary: #fff;
@@ -442,7 +443,7 @@ a {
 
 .stacked-list-item:hover,
 .spaced-list-item:hover {
-  background: #dbeafe;
+  background: var(--primary-lite);
 }
 
 /* Modal */
@@ -519,7 +520,7 @@ a {
 
 .nav-link-item-vertical:hover,
 .nav-vertical-active {
-  background: #dbeafe;
+  background: var(--primary-lite);
 }
 
 .nav-vertical-workspace {
