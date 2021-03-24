@@ -633,6 +633,19 @@ a {
   /* border: 1px solid red; */
 }
 
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
 .flex > * {
   margin: 0 1em 0em 0;
+}
+
+.flex-col > * {
+  margin: 1em 0 0em 0;
 }

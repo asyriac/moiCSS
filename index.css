@@ -13,3 +13,14 @@ iframe {
   align-items: center;
   color: var(--white);
 }
+
+.landing-page {
+  height: 50vh;
+  /* max-width: 20em; */
+  text-align: center;
+  margin: 2em auto;
+}
+
+.landing-page-hero {
+  font-size: 1.5rem;
+}
