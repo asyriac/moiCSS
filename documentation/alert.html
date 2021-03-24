@@ -20,7 +20,7 @@
     <nav class="nav-vertical">
       <ul class="nav-link-vertical">
         <li class="nav-link-item-vertical"><a href="/documentation/avatar.html">Avatar</a></li>
-        <li class="nav-link-item-vertical"><a href="/documentation/alert.html">Alert</a></li>
+        <li class="nav-link-item-vertical nav-vertical-active"><a href="/documentation/alert.html">Alert</a></li>
         <li class="nav-link-item-vertical"><a href="/documentation/badge.html">Badges</a></li>
         <li class="nav-link-item-vertical"><a href="/documentation/button.html">Buttons</a></li>
         <li class="nav-link-item-vertical"><a href="/documentation/card.html">Cards</a></li>
@@ -35,8 +35,18 @@
         <li class="nav-link-item-vertical"><a href="/documentation/utilities.html">Utilities</a></li>
       </ul>
     </nav>
-    <div class="nav-vertical-workspace">
-      <h2 class="mb-sm">Badge</h2>
+    <div class="nav-vertical-workspace container">
+      <h2 class="mb-sm">Alert</h2>
+      <div class="alert mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+      <div class="alert alert-success mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+      <div class="alert alert-danger mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+      <div class="alert alert-info mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+      <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522alert%2520mb-1%2522%253EHello%2520world%2520%253Cbutton%2520class%253D%2522btn-close%2522%2520type%253D%2522button%2522%253EX%253C%252Fbutton%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-success%2520mb-1%2522%253EHello%2520world%2520%253Cbutton%2520class%253D%2522btn-close%2522%2520type%253D%2522button%2522%253EX%253C%252Fbutton%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-danger%2520mb-1%2522%253EHello%2520world%2520%253Cbutton%2520class%253D%2522btn-close%2522%2520type%253D%2522button%2522%253EX%253C%252Fbutton%253E%253C%252Fdiv%253E%250A%253Cdiv%2520class%253D%2522alert%2520alert-info%2520mb-1%2522%253EHello%2520world%2520%253Cbutton%2520class%253D%2522btn-close%2522%2520type%253D%2522button%2522%253EX%253C%252Fbutton%253E%253C%252Fdiv%253E"
+        style="width: 100%; height: 150px; border: 0; transform: scale(1); overflow: hidden"
+        sandbox="allow-scripts allow-same-origin"
+      >
+      </iframe>
     </div>
 
     <script src="../lib/script.js"></script>

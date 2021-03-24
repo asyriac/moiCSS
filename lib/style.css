@@ -374,7 +374,7 @@ a {
   border-radius: 50%;
 }
 
-/* Input */
+/* Form */
 .form-group {
   margin-bottom: 1em;
 }
@@ -405,6 +405,46 @@ a {
   font-size: 0.7rem;
 }
 
+/* Grid */
+.grid {
+  display: flex;
+}
+
+.grid > * {
+  flex-basis: 100%;
+}
+
+/* List */
+
+.list {
+  list-style: none;
+}
+
+.stacked-list {
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.spaced-list {
+}
+
+.stacked-list-item,
+.spaced-list-item {
+  cursor: pointer;
+  padding: 1em;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.spaced-list-item {
+  margin: 0.5em 0;
+}
+
+.stacked-list-item:hover,
+.spaced-list-item:hover {
+  background: #dbeafe;
+}
+
 /* Modal */
 .modal-container {
   width: 100vw;
@@ -416,6 +456,7 @@ a {
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .modal {
@@ -433,6 +474,10 @@ a {
   align-items: center;
   background: var(--grey);
   padding: 0.5em 2em;
+}
+
+.nav-brand {
+  font-size: 1.3rem;
 }
 
 .nav a {
@@ -457,6 +502,7 @@ a {
   height: 100%;
   overflow: auto;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
+  top: 3.8em;
 }
 
 .nav-link-vertical {
@@ -471,12 +517,22 @@ a {
   cursor: pointer;
 }
 
-.nav-link-item-vertical:hover {
-  background: #f1edf7;
+.nav-link-item-vertical:hover,
+.nav-vertical-active {
+  background: #dbeafe;
 }
 
 .nav-vertical-workspace {
-  margin-left: 8.5em;
+  height: 100%;
+  width: 95%;
+  padding-left: 8.8em;
+  padding-top: 3.8em;
+}
+
+.nav-vertical-top {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 /* rating */
@@ -511,6 +567,11 @@ a {
 }
 
 /* Utilities */
+
+/* Background utilities */
+.bg-white {
+  background: var(--white);
+}
 
 /* TODO: Add all margin and padding utility */
 /* Margin */

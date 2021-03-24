@@ -1,0 +1,15 @@
+iframe {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.grid > div {
+  height: 60px;
+  background: var(--danger);
+  border: 3px solid var(--secondary);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
