@@ -571,6 +571,7 @@ a {
 @media (max-width: 500px) {
   .nav-vertical {
     display: none;
+    height: 100vh;
   }
 
   .nav-vertical-workspace {
