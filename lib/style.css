@@ -467,6 +467,13 @@ a {
   padding: 1rem;
   position: relative;
 }
+@media (max-width: 500px) {
+  .modal {
+    overflow: scroll;
+    height: 50vh;
+    width: 80vw;
+  }
+}
 
 /* Navigation */
 .nav {
