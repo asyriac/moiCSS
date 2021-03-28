@@ -499,6 +499,12 @@ a {
 
 .nav-link-item {
   margin: 0 0.6em;
+  padding: 0.2em 0.5em;
+}
+
+.nav-link-item:hover {
+  background: var(--primary-lite);
+  border-radius: 8px;
 }
 
 .nav-vertical {
