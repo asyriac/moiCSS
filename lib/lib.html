@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale = 1.0, 
+maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>moiCSS</title>
+  </head>
+  <body>
+    <div class="container mb-1">
+      <h1 class="mb-md">Avatar</h1>
+      <img class="avatar avatar-sm" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+      <img class="avatar" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+      <img class="avatar avatar-lg" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+
+      <hr />
+
+      <h1 class="mb-md">Alert</h1>
+      <div class="alert mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+      <div class="alert alert-success mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+      <div class="alert alert-danger mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+      <div class="alert alert-info mb-1">Hello world <button class="btn-close" type="button">X</button></div>
+
+      <hr />
+
+      <h1 class="mb-md">Badge</h1>
+      <div>
+        <span class="badge">Primary</span>
+        <span class="badge badge-secodnary">Secondary</span>
+        <span class="badge badge-pill">Pill</span>
+        <span class="badge badge-pill badge-secodnary">Pill</span>
+      </div>
+
+      <div>
+        <div class="mt-1 badge-container">
+          <img class="avatar" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <span class="badge-avatar online"></span>
+        </div>
+        <div class="mt-1 badge-container">
+          <img class="avatar" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <span class="badge-avatar offline"></span>
+        </div>
+        <div class="mt-1 badge-container">
+          <img class="avatar" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <span class="badge-avatar away"></span>
+        </div>
+      </div>
+      <div class="mt-1">
+        <div class="badge-container">
+          <i class="fas fa-bell icon-sm"></i>
+          <span class="badge-notification">2</span>
+        </div>
+        <div class="badge-container">
+          <i class="fas fa-shopping-cart icon-sm"></i>
+          <span class="badge-notification">2</span>
+        </div>
+      </div>
+      <hr />
+      <h1 class="mb-md">Button</h1>
+      <div class="mb-1">
+        <button class="btn btn-primary btn-sm">Primary</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-primary btn-lg">Primary</button>
+      </div>
+      <div class="mb-1">
+        <button class="btn btn-secondary btn-sm">Secondary</button>
+        <button class="btn btn-secondary">Secondary</button>
+        <button class="btn btn-secondary btn-lg">Secondary</button>
+      </div>
+      <div class="mb-1">
+        <a class="btn btn-primary btn-sm" href="">Link</a>
+        <a class="btn btn-primary" href="">Link</a>
+        <a class="btn btn-primary btn-lg" href="">Link</a>
+      </div>
+      <div class="mb-1">
+        <button class="btn btn-primary btn-icon btn-icon-sm"><i class="fas fa-envelope"></i></button>
+        <button class="btn btn-primary btn-icon"><i class="fas fa-envelope"></i></button>
+        <button class="btn btn-primary btn-icon btn-icon-lg"><i class="fas fa-envelope"></i></button>
+      </div>
+      <div class="mb-1">
+        <button class="btn btn-primary btn-icon"><i class="fas fa-chevron-circle-up"></i></button>
+      </div>
+      <hr />
+      <h1 class="mb-md">Cards</h1>
+      <div class="card-list">
+        <div class="card">
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-md card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-1 card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-md card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-list">
+        <div class="card">
+          <div class="card-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, temporibus.</p>
+          </div>
+        </div>
+        <div class="card">
+          <button class="btn-close btn-close-card">X</button>
+          <div class="card-content">
+            <h3>Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, temporibus.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-list">
+        <div class="card">
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <span class="card-badge">New</span>
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-md card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+        <div class="card">
+          <button class="btn-close btn-close-card">X</button>
+          <img class="card-img" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+          <div class="card-content">
+            <h3 class="mb-md">Item name</h3>
+            <h5 class="mb-md card-body">Rs. 599</h5>
+            <button class="btn btn-primary">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-h">
+        <img class="card-img-h" src="https://images.pexels.com/photos/1370750/pexels-photo-1370750.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" />
+        <div class="card-content">
+          <h3 class="mb-md">Item name</h3>
+          <h5 class="mb-md card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, sed numquam. Amet harum necessitatibus adipisci est natus cum possimus odit?</h5>
+          <div class="flex">
+            <button class="btn btn-primary btn-sm">+</button>
+            <h3>5</h3>
+            <button class="btn btn-primary btn-sm">-</button>
+          </div>
+        </div>
+      </div>
+      <div class="card card-shadow">
+        <div class="card-overlay">
+          <img class="card-img" src="https://images.unsplash.com/photo-1611095790691-ff1be3430b22?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="" />
+          <div class="card-overlay-text">
+            <button class="btn btn-primary">Add to wishlist</button>
+          </div>
+        </div>
+        <div class="card-content">
+          <h3 class="mb-sm">Item name</h3>
+          <h5 class="mb-md card-body">Rs. 699</h5>
+          <button class="btn btn-primary mt-sm">Buy</button>
+        </div>
+      </div>
+      <hr />
+      <h1 class="mb-md">Images</h1>
+      <div style="height: 200px; width: 200px">
+        <img class="img-responsive" src="https://images.unsplash.com/photo-1611095790691-ff1be3430b22?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="" />
+      </div>
+      <div style="height: 200px; width: 200px">
+        <img class="img-round" src="https://images.unsplash.com/photo-1611095790691-ff1be3430b22?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="" />
+      </div>
+      <hr />
+      <h1 class="mb-md">Input</h1>
+      <div class="form-group">
+        <label class="" for="fname">First Name</label>
+        <input class="form-control" type="text" id="fname" autocomplete="off" />
+      </div>
+      <div class="form-group">
+        <label class="" for="lname">Last Name</label>
+        <input class="form-control form-error" type="text" id="lname" autocomplete="off" />
+        <span class="invalid-feedback">Error</span>
+      </div>
+      <hr />
+      <h1 class="mb-md">Grid</h1>
+      <div class="grid">
+        <div>1</div>
+        <div>2</div>
+      </div>
+      <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <hr />
+      <h1 class="mb-md">List</h1>
+      <ul class="list stacked-list">
+        <li class="stacked-list-item">Notification 1</li>
+        <li class="stacked-list-item">Notification 2</li>
+        <li class="stacked-list-item">Notification 3</li>
+        <li class="stacked-list-item">Notification 4</li>
+      </ul>
+      <ul class="list">
+        <li class="spaced-list-item">Notification 1</li>
+        <li class="spaced-list-item">Notification 2</li>
+        <li class="spaced-list-item">Notification 3</li>
+        <li class="spaced-list-item">Notification 4</li>
+      </ul>
+      <hr />
+      <h1 class="mb-md">Navigation</h1>
+      <nav class="nav">
+        <div class="nav-brand">
+          <h2><a href="">Brand</a></h2>
+        </div>
+        <ul class="nav-link">
+          <li class="nav-link-item"><a href="">Home</a></li>
+          <li class="nav-link-item"><a href="">About</a></li>
+        </ul>
+      </nav>
+      <hr />
+      <h1 class="mb-md">Modal</h1>
+      <button class="btn btn-primary modal-toggle">Click</button>
+      <div class="modal-container">
+        <div class="modal">
+          <button class="btn-close btn-close-card">X</button>
+          <h1>Text goes here</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic magnam explicabo sint eaque earum nostrum iusto ipsum nulla assumenda optio nobis possimus, atque facilis, nesciunt ab cum. Dolorum, ex? Aliquam.</p>
+        </div>
+      </div>
+      <hr />
+      <h1 class="mb-md">Rating</h1>
+      <div class="rating">3.5<i class="fas fa-star pl-sm"></i></div>
+      <hr />
+      <h1 class="mb-md">Toast</h1>
+      <button class="btn btn-primary tstBtn">Click me</button>
+      <div class="toasts"></div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./lib.script.js"></script>
+  </body>
+</html>
