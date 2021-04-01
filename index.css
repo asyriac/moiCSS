@@ -5,13 +5,13 @@ iframe {
 
 .grid > div {
   height: 60px;
-  background: var(--danger);
+  background: var(--primary-lite);
   border: 3px solid var(--secondary);
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white);
+  color: var(--black);
 }
 
 .landing-page {

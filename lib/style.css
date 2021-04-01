@@ -16,6 +16,7 @@
   --grey: #f3f4f6;
   --dark-grey: #ced4da;
   --white: #fff;
+  --black: #000;
 }
 
 html {
@@ -104,6 +105,7 @@ a {
 
 /* Badge */
 .badge {
+  font-size: 0.685rem;
   padding: 0.2em 0.8em;
   background: var(--primary);
   color: var(--text-secondary);
@@ -151,15 +153,15 @@ a {
   color: var(--text-secondary);
   padding: 0.8em;
   border-radius: 50%;
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   height: 1em;
   width: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -0.7em;
+  right: -0.5em;
 }
 
 /* Buttons */
@@ -234,7 +236,7 @@ a {
 
 .btn-icon {
   font-size: 1rem;
-  padding: 0.6em;
+  padding: 0.6em 0.8em;
   border-radius: 50%;
 }
 
@@ -243,7 +245,8 @@ a {
 }
 
 .btn-icon-lg {
-  font-size: 1.2rem;
+  padding: 0.4em 0.6em;
+  font-size: 1.7rem;
 }
 
 /* TODO: Add scroll to top */
@@ -263,15 +266,32 @@ a {
 .card {
   display: flex;
   flex-direction: column;
-  max-width: 280px;
-  flex: 0 0 280px;
+  max-width: 300px;
+  flex: 0 0 300px;
   background: var(--white);
   position: relative;
   margin: 0 1em 1em 0;
 }
 
+.card-img-container {
+  position: relative;
+}
+
 .card-img {
   max-width: 100%;
+  display: block;
+}
+
+.card-img-overlay {
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  opacity: 0;
+  font-size: 0.6rem;
+}
+
+.card:hover .card-img-overlay {
+  opacity: 1;
 }
 
 .card-h {
@@ -300,11 +320,12 @@ a {
   padding: 0.9em;
   display: flex;
   flex-direction: column;
-}
-
-.card-body {
   flex: 1 0 0%;
 }
+
+/* .card-body {
+  flex: 1 0 0%;
+} */
 
 .card-badge {
   position: absolute;
@@ -326,7 +347,7 @@ a {
   height: 98%;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
   opacity: 0;
   color: white;
   display: flex;
@@ -342,7 +363,7 @@ a {
 }
 
 .card-shadow {
-  transition: box-shadow 500ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out;
 }
 
 .card-shadow:hover {
@@ -355,7 +376,7 @@ a {
 }
 
 .icon-sm {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .icon-lg {
@@ -482,6 +503,7 @@ a {
   align-items: center;
   background: var(--grey);
   padding: 0.5em 2em;
+  z-index: 2;
 }
 
 .nav-brand {
@@ -495,6 +517,7 @@ a {
 .nav-link {
   list-style: none;
   display: flex;
+  align-items: baseline;
 }
 
 .nav-link-item {
@@ -623,11 +646,19 @@ a {
   align-items: center;
 }
 
-.toast {
+.toast-success {
   border-radius: 5px;
   padding: 0.7em;
   margin: 0.5em;
   background: var(--success);
+  color: var(--text-secondary);
+}
+
+.toast-error {
+  border-radius: 5px;
+  padding: 0.7em;
+  margin: 0.5em;
+  background: var(--danger);
   color: var(--text-secondary);
 }
 
@@ -657,7 +688,7 @@ a {
 }
 
 .small-text {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
 }
 
 .text-center {
@@ -708,6 +739,19 @@ a {
 }
 
 /* Padding */
+
+.p-sm {
+  padding: 0.3em;
+}
+
+.pt-1 {
+  padding-top: 1em;
+}
+
+.pb-sm {
+  padding-bottom: 0.3em;
+}
+
 .pr-1 {
   padding-right: 1em;
 }
@@ -724,9 +768,12 @@ a {
 /* Flex */
 .flex {
   display: flex;
-  align-items: flex-end;
   justify-content: flex-start;
   /* border: 1px solid red; */
+}
+
+.flex-align-items-end {
+  align-items: flex-end;
 }
 
 .flex-center {
@@ -743,5 +790,25 @@ a {
 }
 
 .flex-col > * {
-  margin: 1em 0 0em 0;
+  margin: 1em 0em 0em 0em;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 3.4em;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  background-color: white;
+  height: calc(100vh - 3.4em);
+  padding: 0 1em;
+  overflow-y: auto;
 }
