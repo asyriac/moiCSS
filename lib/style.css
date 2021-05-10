@@ -889,6 +889,18 @@ a {
   padding-left: 0.3em;
 }
 
+.pl-md {
+  padding-left: 0.5em;
+}
+
+.pl-lg{
+  padding-left:0.8em;
+}
+
+.pl-1 {
+  padding-left:1em;
+}
+
 .px-1 {
   padding: 0 0.5em;
 }
