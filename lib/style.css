@@ -925,6 +925,10 @@ a {
   align-items: center;
 }
 
+.flex-align-items-start{
+  align-items:flex-start;
+}
+
 .flex-col {
   flex-direction: column;
 }
